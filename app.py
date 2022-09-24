@@ -36,11 +36,11 @@ all_products = [] # <-- Empty array for storing all products from the website.
 
 # <-- Iterate over the products array --> #
 for product in products:
-    product_name = product.select('')[0].text
-    price = product.select('')[0].text
-    description = product.select('')[0].text
-    reviews = product.select('')[0].text
-    image_url = product.select('')[0].text
+    product_name = product.select('')[0].text # <-- Extracting product's name.
+    price = product.select('')[0].text # <-- Extracting product's price.
+    description = product.select('')[0].text # <-- Extracting product's description.
+    reviews = product.select('')[0].text # <-- Extracting product's reviews.
+    image_url = product.select('')[0].text # <-- Extracting product's image url.
 
     product_info = {
         "product_name": product_name.strip(),
@@ -50,7 +50,11 @@ for product in products:
         "image_url": image_url.strip()
     }
 
-    all_products.append(product_info)
+    """
+        - NOTE: the 'strip()' method is used for removing whitespaces that might be present.
+    """
+
+    all_products.append(product_info) # <-- Add 'product_info' dictionary to the 'all_products' array.
 
 keys = all_products[0].keys()
 
@@ -60,4 +64,4 @@ with open('products.csv', 'w', newline = '') as output_file:
     dict_writer.writerows(all_products)
 
 
-print(top_items)
+print(top_items) # <-- Print all top items in the 'top_items' array to the console.
