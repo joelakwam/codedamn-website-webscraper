@@ -1,5 +1,5 @@
-# Web Scraper - Codedamn Website
-- A web scraper that scrapes the [Codedamn](https://codedamn.com) website for products information such as: 
+# Web Scraper - Flipkart Website
+- A web scraper that scrapes the [Flipkart](https://flipkart.com) website for products information such as: 
 1. Product's name
 2. Price
 3. Description
