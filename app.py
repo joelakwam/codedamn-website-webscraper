@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup # <-- For extracting data from the webpage.
 import csv
 
 
-response = requests.get('https://codedamn.com') # <-- Making request to 'https://codedamn.com' and storing the response.
+response = requests.get('https://flipkart.com') # <-- Making request to 'https://codedamn.com' and storing the response.
 beautifulsoup = BeautifulSoup(response.content, 'html.parser') # <-- Initializing the BeautifulSoup class.
 
 
